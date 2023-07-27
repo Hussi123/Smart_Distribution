@@ -1,0 +1,359 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a {
+    color: inherit;
+    background: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    box-shadow: none;
+    background: inherit;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* COMMONS ELEMNT START */
+.commons__title {
+    font-size: 64px;
+    font-weight: 700;
+    color: black;
+}
+
+/* COMMONS ELEMNT END */
+
+
+/* ABOUT START */
+.about {
+    padding: 114px 0 163px;
+}
+
+.about__title {
+    margin-bottom: 50px;
+}
+
+.about__text {
+    margin-bottom: 89px;
+}
+
+.about__card{
+    margin-bottom: 46px;
+}
+
+.about__card-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.about__card-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about__search-img{
+    margin-bottom: 20px;
+}
+/* ABOUT FINISHED */
+
+
+/* CLIENTS SRTART */
+.clents{
+    margin-bottom: 163px;
+}
+
+.clents__title{
+    margin-bottom: 69px;
+}
+
+.clents__text-wrapper{
+    gap: 11px;
+    margin-bottom: 50px;
+}
+
+/* CLIENTS FINISH */
+/* SERVISES START */
+.servises {
+    background: url("../images/servises/servises-img.png") no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 100%;
+    padding: 108px 0 92px;
+    margin-bottom: 140px;
+}
+
+.servises__title {
+    margin-bottom: 70px;
+}
+
+.servises__subtitle {
+    font-size: 40px;
+    margin-bottom: 57px;
+}
+
+.servises__btn {
+    font-size: 24px;
+    padding: 26px 69px;
+    border-radius: 60px;
+    transition: .3s;
+}
+
+.servises__btn:hover {
+    opacity: .7;
+}
+
+/* SERVISES FINISHED */
+
+
+/* ADVANTAGES START */
+.advantages {
+    margin-bottom: 87px;
+}
+
+.advantages__title {
+    margin-bottom: 94px;
+}
+
+.advantages__cards-item {
+    margin-bottom: 140px;
+}
+
+.advantages__cards-title h1 {
+    font-size: 40px;
+    margin-bottom: 2px;
+}
+
+.advantages__cards-title div {
+    margin-bottom: 36px;
+    font-size: 20px;
+}
+
+.advantages__cards-title p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/* ADVANTAGES FINISH */
+
+/* WORKING SATRT */
+.working {
+    margin-bottom: 187px;
+    position: relative;
+}
+
+.working__title {
+    margin-bottom: 60px;
+}
+
+.working__img-position {
+    position: absolute;
+    top: -15px;
+    right: 0;
+}
+
+.working__img-wrapper {
+    margin-bottom: 60px;
+}
+
+/* WORKING FINISH */
+
+/* CAROUSEL START */
+.carousel {
+    position: relative;
+    height: 100%;
+    margin-bottom: 226px;
+}
+
+.carousel__title {
+    margin-bottom: 73px;
+}
+
+.carousel__card {
+    width: 297px;
+    margin: 0 10px;
+}
+
+.carousel__card-pagination {
+    position: relative;
+    text-align: center;
+    margin-top: 89px;
+}
+
+.pagination__item {
+    width: 114px;
+    height: 8px;
+    border-radius: 6px;
+    opacity: 0.20000000298023224;
+    background: #000;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.pagination__item:last-child {
+    padding-right: 0;
+}
+
+.pagination__item-active {
+    opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute !important;
+    background: #fff;
+    border-radius: 50%;
+    padding: 35px;
+    border: 1px solid #EAEAEA;
+    top: 34% !important;
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: #000;
+    font-size: 35px !important;
+    font-weight: bold;
+}
+
+
+
+/* CAROUSEL FINISHED */
+
+
+
+
+@media (max-width:992px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width:768px) {
+    .commons__title {
+        font-size: 36px;
+    }
+
+    .about{
+        padding: 64px 0 35px ; 
+    }
+
+    .clents{
+        margin-bottom: 80px;
+    }
+    
+    .clents__title{
+        margin-bottom: 39px;
+    }
+    
+    .clents__text-wrapper{
+        margin-bottom: 32px;
+    }
+    .servises {
+        margin-bottom: 58px;
+    }
+
+    .servises__title {
+        margin-bottom: 34px;
+    }
+
+    .servises__subtitle {
+        font-size: 24px;
+    }
+
+    .servises__btn {
+        font-size: 20px;
+    }
+
+    .advantages {
+        margin-bottom: 40px;
+    }
+
+    .advantages__title {
+        margin-bottom: 29px;
+    }
+
+    .advantages__cards-item {
+        margin-bottom: 42px;
+    }
+
+    .working {
+        margin-bottom: 65px;
+        overflow-x: hidden;
+    }
+
+    .working__title {
+        text-align: start !important;
+    }
+
+    .working__img-position {
+        top: 20px;
+        right: -20px;
+        height: 66px;
+        width: 141px;
+    }
+
+    .carousel{
+        margin-bottom: 135px;
+    }
+
+    .pagination__item{
+        width: 91px;
+        height: 8px;
+    }
+
+
+
+}
+
+@media (max-width:500px) {
+
+    .servises {
+        padding-bottom: 112px;
+    }
+
+    .servises__btn {
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .carousel__card-4 .carousel__card-5 .carousel__card-6 .carousel__card-7 .carousel__card-8 {
+        display: none;
+    }
+
+}
